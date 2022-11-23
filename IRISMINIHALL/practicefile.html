@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice file</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Dancing+Script:wght@500&family=Shadows+Into+Light&family=Shalimar&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Corinthia:wght@700&family=Shadows+Into+Light&family=Shalimar&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            padding: 1.5rem;
+            width: 100%;
+            height: auto;
+            color: yellow;
+            font-family: 'Dancing Script', cursive;
+            font-size: 24px;
+            font-weight: 500;
+            font-variant: initial;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            background-image: url(images/1X3A3770.JPG);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            transition: 0.5s;
+        }
+
+        .bookbtn {
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+            opacity: 0.9;
+        }
+
+        .btn>button:hover {
+            background-color: black;
+            color: white;
+            padding: 5px;
+        }
+
+        .form-group {
+            background-color: aliceblue;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            border-left: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            height: auto;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+        }
+
+        .form-element>input {
+            background: none;
+            color: white;
+            padding: 2px;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            width: 100%;
+            margin: 2px;
+        }
+
+        .form-element>textarea {
+            width: 100%;
+            resize: none;
+            background: none;
+            outline: none;
+            color: aliceblue;
+            border-radius: 10px;
+            opacity: 1;
+        }
+
+
+        #closeBtn {
+            color: white;
+            size: 10px;
+            text-align: right;
+            text-decoration: none;
+        }
+
+        .enquireBtn {
+            background: none;
+            border-radius: 10px;
+            padding: 5px;
+            color: aqua
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="header" id="header">
+        <div class="mob">
+            <span>
+                Talk to us
+                <br>
+                +91 7691679898
+            </span>
+        </div>
+        <div class="mail">
+            <span>
+                mail us at <a href="#">
+                    <br>
+                    Dummmymail@gmail.com</a>
+            </span>
+        </div>
+        <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <div class="form-group" id="formGroup" onsubmit="sendEmail()">
+                <span class="closeB"><a href="#" onclick="closeForm()" id="closeBtn">&times;</a></span>
+                <div class="form-element">
+                    <input type="text" placeholder="USERNAME" id="userName">
+                </div>
+                <div class="form-element">
+                    <input type="email" placeholder="EMAIL" id="email">
+                </div>
+                <div class="form-element">
+                    <textarea name="bookings " id="bookings" cols="30" rows="5" placeholder="YOUR MESSAGE HERE..."
+                        id="Comment"></textarea>
+                </div>
+                <div>
+                    <button type="submit" class="enquireBtn">
+                        Enquire
+                    </button>
+                </div>
+
+            </div>
+        </form>
+
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+
+
+<!--  
+
+
+    </style>-->

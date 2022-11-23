@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+
+}
+
+body {
+    background: linear-gradient(217deg, rgba(254, 254, 249, 0.8), rgba(255, 0, 0, 0) 70.71%),
+        linear-gradient(127deg, rgba(203, 255, 220, 0.8), rgba(109, 236, 243, 0) 70.71%),
+        linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);     
+}
+body h4{
+    font-family: 'Dancing Script', cursive;
+    font-size:28px;
+}
+
+.logo {
+    max-height: 180px;
+    max-width: 400px;
+}
+
+.nav-item {
+    list-style: none;
+    color: white
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    border-radius: none;
+    border-bottom: 2px solid black;
+    color: white;
+    transition: 0.7s;
+}
+.header {
+    padding: 1.5rem;
+    width: 100%;
+    height: auto;
+    color: yellow;
+    font-family: 'Dancing Script', cursive;
+    font-size: 38px;
+    font-weight: 500;
+    font-variant: initial;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url(images/1X3A3770.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition:0.5s;
+}
+
+.bookbtn {
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.btn>button:hover {
+    background-color: black;
+    color: white;
+
+    padding: 5px;
+}
+
+.form-group {
+    background-color: rgba(255, 67, 98);
+    background-image: url(images/irisselectedlogo-removebg-preview.png);
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+#formGroup {
+    display: none;
+}
+
+.form-element>input {
+    background-color: aliceblue;
+    color: black;
+    padding: 5px;
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    margin: 5px;
+}
+
+.form-element>textarea {
+    width: 100%;
+    resize: none;
+    background-color: white;
+    opacity: 1;
+}
+
+#closeBtn {
+    color: white;
+    size: 10px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.enquireBtn {
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.closeB {
+    text-align: right
+}
+
+.enquireBtn {
+    text-align: center
+}
+
+.hover-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+
+.img-wrapper {
+    padding: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper>img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-wrapper>.overlay {
+    position: absolute;
+    inset: 0;
+    font-size: 1rem;
+    text-transform: capitalize;
+    padding: 1rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:rgb(255, 0, 200);
+    font-size:20px;
+    font-family:'Courier New', Courier, monospace
+}
+
+.img-wrapper>img,
+.img-wrapper>.overlay {
+    transition: 100ms ease-in-out;
+}
+
+.img-wrapper>.overlay {
+    opacity: 0;
+}
+
+.img-wrapper>.overlay:hover {
+    opacity: 1;
+}
+
+.img-wrapper:hover>img.blur {
+    filter: blur(5px);
+    background-color: rgba(245, 245, 255, 0.404);
+    opacity: 0.9;
+}
+.watsapp-container {
+    position: fixed;
+    right: 30px;
+    bottom: -30px;
+    padding: 24px;
+    animation: fade-up 1000ms forwards;
+    opacity: 0;
+    transition: 0.5s
+}
+
+@keyframes fade-up {
+    100% {
+        bottom: 24px;
+        opacity: 1;
+    }
+}
+
+.watsapp-container .watsapp-btn {
+    font-size: 48px;
+    color: #2df256;
+}
+
+.footer {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.comments textarea {
+    max-width: 90%;
+    resize: none;
+}
+
+.mail>span>a,
+.tel>span>a {
+    text-decoration: none;
+    color: white;
+}
+.feedback{
+    text-decoration: none;
+    color:white;
+    padding:1px;
+    border:2px solid black
+}
+.socials > i{
+    margin:2px;
+    padding:2px;
+}
+.socials > i:hover{
+    font-size:60px;
+    transition:0.6s;
+    color:white;
+}

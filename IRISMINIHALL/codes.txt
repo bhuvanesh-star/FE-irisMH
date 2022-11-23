@@ -1,0 +1,30 @@
+CSS 
+
+HTML    
+
+<!--
+    HTML 
+    <div class="header">
+        <div class="mob">
+            <h4>Talk us at <br><span>
+                +91 7878787878
+            </span></h4>
+        </div>
+        <div class="mail">
+            <h4>Mail us at <br><span>
+                Dummmymail@gmail.com
+            </span></h4>
+        </div>
+    </div>
+    CSS
+    .header{
+    
+    opacity:0.5;
+    padding:5px;
+    width:100%;
+    color:black;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-evenly;
+}
+-->
